@@ -7,11 +7,11 @@ public class Vehicle {
     private double mileage;
 
     public double accelerate(double speed, double durationInHours) {
-        System.out.println(name + "aceelerated with" + speed + "km/h for" + durationInHours + "hours.");
+        System.out.println(name + " aceelerated with " + speed + " km/h for " + durationInHours + " hours.");
 
         double traveledDistance = speed * durationInHours;
 
-        System.out.println("Traveled distance" + traveledDistance + "km.");
+        System.out.println(" Traveled distance ;" + traveledDistance + " km.");
 
 
 
