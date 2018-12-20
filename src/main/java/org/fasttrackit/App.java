@@ -10,7 +10,13 @@ public class App
 
     {
 
-        Car car = new Car ();
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+        engine.capacity = 1500;
+        engine.expiryDate = LocalDateTime.now().minusYears(10);
+
+
+        Car car = new Car (engine);
         car.name = "Dacia";
         car.color = "white";
         car.doorCount = 4;
@@ -31,10 +37,7 @@ public class App
 
 
 
-        Engine engine = new Engine();
-        engine.manufacturer = "Renault";
-        engine.capacity = 1500;
-        engine.expiryDate = LocalDateTime.now().minusYears(10);
+
 
 
 
@@ -43,7 +46,7 @@ public class App
         car.engine.manufacturer = "BMW";
         engine.manufacturer = "Microsoft";
 
-        Car car2 = new Car();
+        Car car2 = new Car(engine);
         car2.name = "Skoda";
 
 
